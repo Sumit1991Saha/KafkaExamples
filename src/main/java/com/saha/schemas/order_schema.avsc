@@ -1,0 +1,17 @@
+{
+  "type": "record",
+  "namespace": "com.saha.model",
+  "name": "Order",
+  "fields": [
+    {
+      "name": "userId",
+      "type": "string"
+    }, {
+      "name": "totalAmount",
+      "type": "float"
+    }, {
+      "name": "noOfItems",
+      "type": "int"
+    }
+  ]
+}

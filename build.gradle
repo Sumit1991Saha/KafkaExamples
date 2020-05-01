@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile group: 'org.apache.kafka', name: 'kafka-clients', version: '2.3.0'
+    compile group: 'org.apache.kafka', name: 'kafka-streams', version: '2.3.0'
+    compile group: 'org.apache.avro', name: 'avro', version: '1.8.2'
+
+    // https://mvnrepository.com/artifact/org.apache.avro/avro-tools
+    compile group: 'org.apache.avro', name: 'avro-tools', version: '1.8.2'
+}
